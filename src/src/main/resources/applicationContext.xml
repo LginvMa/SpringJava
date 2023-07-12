@@ -14,7 +14,8 @@
     </bean>
 
     <bean id="ClassicalMusicBean"
-          class="ru.login.spring.ClassicalMusic">
+          class="ru.login.spring.ClassicalMusic"
+    factory-method="getClassiccalMusic">
     </bean>
 
     <bean id="RapMusicBean"

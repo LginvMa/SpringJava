@@ -10,11 +10,15 @@ public class main {
 //
 //        MusicPlayer musicPlayer = new MusicPlayer(music);
 
-        MusicPlayer musicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
-        musicPlayer.playMusic();        
+//        MusicPlayer musicPlayer = context.getBean("musicPlayer",MusicPlayer.class);
+//        musicPlayer.playMusic();
+//
+//        System.out.println(musicPlayer.getName());
+//        System.out.println(musicPlayer.getVolume());
+        ClassicalMusic classicalMusic = context.getBean("ClassicalMusicBean", ClassicalMusic.class);
 
-        System.out.println(musicPlayer.getName());
-        System.out.println(musicPlayer.getVolume());
+        System.out.println(classicalMusic.getSong());
+
         context.close();
     }
 }
